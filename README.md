@@ -266,27 +266,147 @@ $ ls
 
 	history:
 
-
-
-	top:
-
+  507  ls
+  508  echo "test2"
+  509  ls
+  510  pwd
+  511  cd ..
+  512  nano README.md
+  513  nano README.md
+  514  ls
+  515  cd test1
+  516  cat test1
+  517  ls
+  518  cat test1.1
+  519  cd ..
+  520  nano README.md
+  521  cd test1
+  522  cat test1.1 > This still a test
+  523  cat test1.1 > "This still a test"
+  524  cat test1.1
+  525  ls
+  526  rm This
+  527  ls
+  528  cd ..
+  529  nano README.md
+  530  history
 
 
 	WhoamI:
 
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
+$ whoami
+Usuario
 
 
 2.-The git / github with examples:
 
-	-the intial configuration
+	-the intial configuration: This commands will help you to put you name and the email you want people to see whenever you make and change and commit.
 	
-	-starting a project from zero or clonning an existing repository
+	$ git config --global user.name "Antoniowtd"
+	$ git config --global user.email antonio.rn@outlook.com
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+      user.name=Antoniowtd
+      user.email=antonio.rn@outlook.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/Antoniowtd/Extemporary_Exam.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+
+
+	-starting a project from zero or clonning an existing repository: 
+
+echo "# Hola" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+
+in case you clone:
+
+git clone  https://github.com/Antoniowtd/Git-and-GitHub-Markdown.git
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop
+$ git clone https://github.com/Antoniowtd/Git-and-GitHub-Markdown.git
+Cloning into 'Git-and-GitHub-Markdown'...
+remote: Enumerating objects: 25, done.
+remote: Counting objects: 100% (25/25), done.
+remote: Compressing objects: 100% (19/19), done.
+remote: Total 25 (delta 6), reused 22 (delta 3), pack-reused 0
+Receiving objects: 100% (25/25), 4.68 KiB | 4.68 MiB/s, done.
+Resolving deltas: 100% (6/6), done.
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop
+$ ls
+ Antonio/                    'League of Legends.lnk'*
+'Apex Legends.url'           'Lively Wallpaper.lnk'*
+ Atom.lnk*                   'Microsoft Teams.lnk'*
+ BPM/                         OP.GG.lnk*
+ Blitz.lnk*                  'Python 3.9 (64-bit) (2).lnk'*
+'Cisco Webex Meetings.lnk'*   Spotify.lnk*
+ Dev-C++.lnk*                 TLauncher.lnk*
+ Discord.lnk*                 desktop.ini
+ Escuela/                     khjvol/
+'Extemporary_ Exam'/          sdfaerg.mcworld
+ 	#Git-and-GitHub-Markdown/
+
+	As we see in the last one we found the file cloned
+
+
 
 	-basic workflow commands to stage and commit
 
+
+
 	-push to a remote repository
 
+echo "# Hola" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Antoniowtd/Hola.git
+git push -u origin main
+
+
+
 	-branches: create, delete, save/commit and merge
+
+
+create:
+$ git checkout -b iss53
+Switched to a new branch "iss53"
+
+Delete:
+git branch -d "Name"
+
+Save/Commit:
+git fetch -p
+
+Merge:
+git merge
+
 
 	-gitflow
 
