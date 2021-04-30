@@ -169,26 +169,112 @@ $ pwd
 	-compare:
 
 	diff:
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
+$ diff test1 test2
+Only in test1: test1.1
+Only in test1: test1.2
+Only in test2: test2.1
+
+
 	cat:
+
+
+
 
 	-find files, folders and inside files:
 
 	grep:
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
+$ git grep test
+README.md:README.md  test1/  test2/
+README.md:$ cd test1
+README.md:Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+README.md:/c/Users/Usuario/Desktop/Extemporary_ Exam/test1
+README.md:Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+README.md:$ cd test1
+README.md:Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+README.md:README.md  test1/  test2/
+README.md:$ cd test1
+README.md:Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+README.md:Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+README.md:$ nano test1.1
+README.md:Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+README.md:$ rm test1.1
+README.md:Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+README.md:Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+README.md:$ nano test1.1
+README.md:Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+README.md:$ cp test1.1 test2
+README.md:Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+README.md:test1.1  test2
+README.md:Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+README.md:$ cat test1.1
+README.md:This is a test
+README.md:Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+README.md:$ cat test2
+README.md:This is a test
+README.md:Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+README.md:test1.1  test2
+README.md:Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+README.md:$ mkdir test1.2
+README.md:Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+README.md:test1.1  test1.2/  test2
+:
+
+
 	cat:
+
+
+
 	echo:
+
+
 
 	-create and edit text files:
 
-	nano:
+	nano: This command will create a file and incase it has already been created will enter to the file to edit it
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
+$ nano README.md
+
+
 	vim:
+
+
+
 	touch:
+
+
+
 	cat + ">":
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+$ cat test1.1 > "This still a test"
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+$ cat test1.1
+This is a test
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
+$ ls
+'This still a test'   test1.1   test1.2/
+
 	
 	-get the state of the computer:
 
 	history:
+
+
+
 	top:
+
+
+
 	WhoamI:
+
+
 
 2.-The git / github with examples:
 
