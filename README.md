@@ -46,7 +46,7 @@ Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
 $ ls
 Part_one/  Part_two/
 
-	rm:
+	rm: This command will remove a file that you have
 
 Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
 $ ls
@@ -78,7 +78,7 @@ $ ls
 Part_two/
 
 
-	cp:
+	cp: This will copy the content of a file and put it in another file with another name
 
 Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
 $ nano test1.1
@@ -99,7 +99,7 @@ $ cat test2
 This is a test
 
 
-	mv:
+	mv: You can mive files with this as in the example the file test2 is moved to the directory test1.2 
 
 Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
 $ ls
@@ -168,7 +168,7 @@ $ pwd
 
 	-compare:
 
-	diff:
+	diff: This will show you the differences between your directories
 
 Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
 $ diff test1 test2
@@ -177,14 +177,9 @@ Only in test1: test1.2
 Only in test2: test2.1
 
 
-	cat:
-
-
-
-
 	-find files, folders and inside files:
 
-	grep:
+	grep: This command will look in you computer files to find the files with the name you wrote as in the example is git grep test
 
 Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
 $ git grep test
@@ -223,15 +218,6 @@ README.md:Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (mas
 README.md:test1.1  test1.2/  test2
 :
 
-
-	cat:
-
-
-
-	echo:
-
-
-
 	-create and edit text files:
 
 	nano: This command will create a file and incase it has already been created will enter to the file to edit it
@@ -248,7 +234,7 @@ $ nano README.md
 
 
 
-	cat + ">":
+	cat + ">": This will let you see the content of a file and at the same time add a new file
 
 Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam/test1 (master)
 $ cat test1.1 > "This still a test"
@@ -264,7 +250,7 @@ $ ls
 	
 	-get the state of the computer:
 
-	history:
+	history: This will  allow you to see the commands that you have written
 
   507  ls
   508  echo "test2"
@@ -292,7 +278,7 @@ $ ls
   530  history
 
 
-	WhoamI:
+	WhoamI: This will show you the name of the computer that print this comment
 
 Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
 $ whoami
@@ -338,6 +324,10 @@ branch.master.merge=refs/heads/master
 
 	-starting a project from zero or clonning an existing repository: 
 
+	git init will indicate that you just started a project
+
+	git clone "URL" will copy the repository of the url
+
 echo "# Hola" >> README.md
 git init
 git add README.md
@@ -377,11 +367,40 @@ $ ls
 
 	-basic workflow commands to stage and commit
 
-git status:
-git add:
-git commit -m "The commend of the commit"
+	git status: you will use git status in case you want to see the files if they are being follow or not
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test3/test3.1
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+	git add:In case the file is not being follow you added to the stage
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
+$ git add *
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+	git commit -m "The comment of the commit": in case everything is on the stage area you commit and place a commet with the changes
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
+$ git commit -m "Commit to explain the commands to stage and commit"
+[master 4aa7203] Commit to explain the commands to stage and commit
+ 2 files changed, 37 insertions(+), 4 deletions(-)
+ create mode 100644 test3/test3.1
 
 	-push to a remote repository
+
+	git push -u origin master: This comment will Upload the remote repository
 
 echo "# Hola" >> README.md
 git init
@@ -396,8 +415,8 @@ git push -u origin main
 	-branches: create, delete, save/commit and merge
 
 
-create:
-git checkout -b "Name": With this you will create and move to a new branch thta you create
+	create:
+	git checkout -b "Name": With this you will create and move to a new branch thta you create
 
 $ git checkout -b SecondBranch
 Switched to a new branch "Second Branch"
@@ -405,11 +424,6 @@ Switched to a new branch "Second Branch"
 Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
 $ git branch
 * master
-
-Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
-$ git checkout .b SecondBranch
-error: pathspec '.b' did not match any file(s) known to git
-error: pathspec 'SecondBranch' did not match any file(s) known to git
 
 Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
 $ git checkout -b SecondBranch
@@ -421,8 +435,8 @@ $ git branch
   master
 
 
-Delete:
-git branch -d "Name": With this you will delete a branch named
+	Delete:
+	git branch -d "Name": With this you will delete a branch named
 
 Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
 $ git branch -d SecondBranch
@@ -433,13 +447,29 @@ $ git branch
 * master
 
 
-Save/Commit:
-git fetch -p
+	Save/Commit:
+	git fetch -p
 
-Merge:
-git merge
+	Merge:
+	git merge
 
 
 	-gitflow
 
-	
+	gitflow: This will create a branch created around a project.
+
+first you clone a repository:
+
+git clone:https://github.com/Antoniowtd/Hola.git
+
+then you create a branch:
+
+git cheackout -b develop master
+
+Then you create a branch in the remote repository:
+
+git push --set-upstream origin develop
+
+and you initializate gitflow:
+
+Git flow init
