@@ -226,12 +226,24 @@ Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
 $ nano README.md
 
 
-	vim:
+	vim: This will create a fille but the editor of the text will be vim insted of nano in case you want to go out of vim you need to write :wq
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
+$ vim test4
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
+$ cat test4
+Hi
 
 
+	git touch: This will create archives as we see I create test.txt
 
-	touch:
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
+$ touch test.txt
 
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
+$ ls
+README.md  test.txt  test1/  test2/  test3/  test4
 
 
 	cat + ">": This will let you see the content of a file and at the same time add a new file
@@ -448,10 +460,11 @@ $ git branch
 
 
 	Save/Commit:
-	git fetch -p
+	git stash: This will upload you chages that the branch that you are in have
+
 
 	Merge:
-	git merge
+	git merge: This will combine your two branches
 
 
 	-gitflow
