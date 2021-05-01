@@ -377,7 +377,9 @@ $ ls
 
 	-basic workflow commands to stage and commit
 
-
+git status:
+git add:
+git commit -m "The commend of the commit"
 
 	-push to a remote repository
 
@@ -395,11 +397,41 @@ git push -u origin main
 
 
 create:
-$ git checkout -b iss53
-Switched to a new branch "iss53"
+git checkout -b "Name": With this you will create and move to a new branch thta you create
+
+$ git checkout -b SecondBranch
+Switched to a new branch "Second Branch"
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
+$ git branch
+* master
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
+$ git checkout .b SecondBranch
+error: pathspec '.b' did not match any file(s) known to git
+error: pathspec 'SecondBranch' did not match any file(s) known to git
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
+$ git checkout -b SecondBranch
+Switched to a new branch 'SecondBranch'
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (SecondBranch)
+$ git branch
+* SecondBranch
+  master
+
 
 Delete:
-git branch -d "Name"
+git branch -d "Name": With this you will delete a branch named
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
+$ git branch -d SecondBranch
+Deleted branch SecondBranch (was c498428).
+
+Usuario@DESKTOP-VA1PJA4 MINGW64 ~/Desktop/Extemporary_ Exam (master)
+$ git branch
+* master
+
 
 Save/Commit:
 git fetch -p
